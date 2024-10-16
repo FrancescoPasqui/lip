@@ -25,7 +25,7 @@ let%test "balanced_parentheses_2" = derive balanced_parentheses [ 7;0;2;9 ] |> t
 let%test "balanced_parentheses_3" = derive balanced_parentheses [ 0;2;4;1;5;0;9 ] |> to_string = "({[][{}()]})"
 
 (* #### Exercise 5 *)
-let%test "zero_one_same_1" = derive same_amount [ 8 ] |> to_string = "ϵ"
-let%test "zero_one_same_2" = derive same_amount [ 7;6;8 ] |> to_string = "1001"
-let%test "zero_one_same_3" = derive same_amount [ 0;6;7;4;8 ] |> to_string = "00110101"
-let%test "zero_one_same_4" = derive same_amount [ 4;0;0;0;8 ] |> to_string = "10001110"
+let%test "zero_one_same_1" = derive same_amount [ 6 ] |> to_string = "ϵ"
+let%test "zero_one_same_2" = derive same_amount [ 3;1;6 ] |> to_string = "1001"
+let%test "zero_one_same_3" = derive same_amount [ 0;1;4;0;6 ] |> to_string = "00110101"
+let%test "zero_one_same_4" = derive same_amount [ 4;0;0;0;6 ] |> to_string = "10001110"

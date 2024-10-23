@@ -2,6 +2,7 @@
   open Token
 }
 
+(*Espressioni regolari*)
 let white = [' ' '\t']+
 let letter = ['a'-'z' 'A'-'Z']
 let chr = ['a'-'z' 'A'-'Z' '0'-'9']
@@ -16,6 +17,6 @@ rule read_token =
   | "=" { ASSIGN }
   | "+" { PLUS }
   | ";" { SEQ }  
-  | id { ID (Lexing.lexeme lexbuf) }
+  | id { ID (Lexing.lexeme lexbuf) }   (*(Lexing.lexeme lexbuf): mette tra parentesi quello che viene dopo*)
   | num { CONST (Lexing.lexeme lexbuf) }    
   | eof { EOF }

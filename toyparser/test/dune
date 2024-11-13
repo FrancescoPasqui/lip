@@ -4,6 +4,3 @@
  (preprocess
   (pps ppx_inline_test))
  (libraries toyparser))
-
-(test
- (name test_toyparser))

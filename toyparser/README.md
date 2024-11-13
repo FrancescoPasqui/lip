@@ -141,5 +141,3 @@ echo "0x01 + 2" | dune exec toyparser
 ## Task 5
 
 Implement unit tests in the `test` directory.
-
-Your job in this task is to rewrite the code you wrote that handles subtraction, multiplication and division using the `==>` operator following the example above.
